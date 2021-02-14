@@ -32,13 +32,11 @@ class App extends React.Component{
   render() {
     const { selectedVideo, videos } = this.state;
     return (
-        <Grid container>
+        <Grid container style={{ padding: "10px", backgroundColor: "#F5F5F5"}}>
           <Grid item xs={12}>
             <Grid container spacing={4}>
               <Grid item xs={12} >
-                <Paper>
                   <Search onFormSubmit={this.handleSubmit} />
-                </Paper>
               </Grid>  
               <Grid item xs={7}>
                 <VideoDetail video={selectedVideo} />
