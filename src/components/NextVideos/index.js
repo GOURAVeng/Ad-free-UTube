@@ -7,8 +7,8 @@ const NextVideos = ({video, onVideoClick}) => {
             <Paper style={{ display: "flex", alignItems: 'center', cursor: 'pointer'}} onClick={() => onVideoClick(video)}>
                 <img alt="next videos" style={{ marginRight: '20px'}} src={video.snippet.thumbnails.medium.url} />
                 <div style={{flexDirection:"column", display: 'flex'}}>
-                <Typography variant="subtitle1"><b>{video.snippet.title}</b></Typography>
-                <Typography variant="subtitle2">{video.snippet.channelTitle}</Typography>
+                    <Typography variant="subtitle1"><b>{video.snippet.title}</b></Typography>
+                    <Typography variant="subtitle2">{video.snippet.channelTitle}</Typography>
                 </div>
                 
             </Paper>
